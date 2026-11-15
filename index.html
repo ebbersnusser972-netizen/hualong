@@ -43,6 +43,7 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; } /* the zoom overlay sets display:grid; without this it covers the page even when hidden */
 body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 14px; line-height: 1.6; }
 button, input, select, textarea { font: inherit; color: inherit; }
 h1, h2, h3, h4 { margin: 0; text-wrap: balance; line-height: 1.3; }
